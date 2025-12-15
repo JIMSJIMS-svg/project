@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #c62828;
+    /* A strong, eye-catching red */
+    --secondary-color: #d50000;
+    /* A brighter, more energetic red for accents */
+    --tertiary-color: #212121;
+    /* A dark charcoal gray for navigation or dividers */
+    --text-color: #ffffff;
+    /* Clean white for high contrast on dark backgrounds */
+    --text-dark: #333333;
+    /* A dark gray for text on light backgrounds */
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    /* A clear, distinct shadow */
+    --bg-color: #fafafa;
+    /* A clean, almost pure white background */
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    color: transparent;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+header div ul {
+    list-style: none;
+    display: flex;
+}
+
+header div ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+header div ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+header a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--bg-color);
+    transform: scaleX(0);
+    transition: all 0.2s ease;
+}
+
+header a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+aside {
+    padding: 10px;
+}
+
+main {
+    background-color: var(--tertiary-color);
+    height: 100vh;
+}
