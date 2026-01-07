@@ -16,6 +16,7 @@ $user = $_SESSION['user'] ?? null;
 </head>
 
 <body>
+    <img src="asset/bg.png">
     <header>
         <ul>
             <?php if ($user === null): ?>

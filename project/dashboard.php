@@ -9,17 +9,18 @@ require 'db/db.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventory</title>
-    <link rel="stylesheet" href="styles/dash.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
 </head>
 
 <body>
+    <img src="asset/bg.png">
     <header>
         <div class="head">
             <h1>SHJCS Inventory</h1>
             <nav>
                 <ul>
                     <li><a href="dashboard.php">Home</a></li>
-                    <li><a href="index.php">Rooms</a></li>
+                    <li><a href="rooms.php">Rooms</a></li>
                     <li><a href="reports.php">Reports</a></li>
                     <li><a href="config/logout.php">Logout</a></li>
                 </ul>
@@ -36,7 +37,7 @@ require 'db/db.php';
     
                 </div>
             </section>
-            
+
             <section id="hero">
                 <div class="history">
 

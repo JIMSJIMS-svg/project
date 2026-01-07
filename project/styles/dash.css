@@ -18,6 +18,18 @@
     --border-radius: 8px;
 }
 
+body {
+    background-color: #e2d9d9;
+}
+
+img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.4;
+}
+
 header {
     display: flex;
     justify-content: center;

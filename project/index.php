@@ -14,6 +14,7 @@ require 'db/db.php';
 </head>
 
 <body>
+    
     <div id="addItemModal" style="display:none;">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
@@ -80,6 +81,7 @@ require 'db/db.php';
             </header>
 
             <main>
+                <img src="asset/bg.png">
                 <section id="genList">
                     <div id="box-cards">
                         <div class="box-card">
