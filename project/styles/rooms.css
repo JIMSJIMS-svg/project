@@ -122,4 +122,5 @@ main .rooms .desc {
     padding: 5px 10px;
     color: var(--primary-color);
     font-weight: 800;
+    cursor: pointer;
 }

@@ -9,7 +9,7 @@ require 'db/db.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHJCS Rooms</title>
-    <link rel="stylesheet" href="styles/rooms.css">
+    <link rel="stylesheet" href="styles/room.css">
 </head>
 
 <body>
@@ -36,7 +36,7 @@ require 'db/db.php';
                 <section class="rooms">
                     <div class="title">
                         <h1><?= htmlspecialchars($row['rn']); ?></h1>
-                        <button>Edit</button>
+                        <button onclick="editModal()">Edit</button> 
                     </div>
 
                     <div id="img">
