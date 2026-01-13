@@ -9,7 +9,7 @@ require 'db/db.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHJCS Rooms</title>
-    <link rel="stylesheet" href="styles/room.css">
+    <link rel="stylesheet" href="../styles/room.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@ require 'db/db.php';
                     <li><a href="dashboard.php">Home</a></li>
                     <li><a href="rooms.php">Rooms</a></li>
                     <li><a href="reports.php">Reports</a></li>
-                    <li><a href="config/logout.php">Logout</a></li>
+                    <li><a href="../config/logout.php">Logout</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,7 +40,6 @@ require 'db/db.php';
                     </div>
 
                     <div id="img">
-
                         <img id="room-logo" src="<?= htmlspecialchars($row['photo']); ?>?>">
                     </div>
 

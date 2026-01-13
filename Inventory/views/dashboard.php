@@ -1,5 +1,8 @@
 <?php
+session_start();
+
 require 'db/db.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +12,7 @@ require 'db/db.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventory</title>
-    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
 </head>
 
 <body>

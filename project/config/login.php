@@ -2,9 +2,12 @@
 session_start();
 require '../db/db.php';
 
+
+
 $errors = [];
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $login($identifier, $password);
     $identifier = trim($_POST['identifier'] ?? '');
     $password   = trim($_POST['password'] ?? '');
 

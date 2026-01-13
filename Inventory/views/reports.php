@@ -8,7 +8,7 @@ require 'db/db.php'
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/report.css">
+    <link rel="stylesheet" href="../styles/report.css">
 </head>
 <body>
     <img src="asset/bg.png">
@@ -25,5 +25,8 @@ require 'db/db.php'
             </nav>
         </div>
     </header>
+    <main>
+        
+    </main>
 </body>
 </html>

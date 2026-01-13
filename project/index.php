@@ -65,9 +65,10 @@ require 'db/db.php';
             <nav>
                 <h1>Navigations</h1>
                 <ul>
-                    <li><a href="dashboard.php">Dashboard</a></li>
-                    <li><a href="getReport.php">Get Report</a></li>
-                    <li><a href="reports.php">Reports</a></li>
+                    <li><a href="views/dashboard.php">Dashboard</a></li>
+                    <li><a href="routes/getReport.php">Get Report</a></li>
+                    <li><a href="views/reports.php">Reports</a></li>
+                    <li><a href="routes/logout.php">Logout</a></li>
                 </ul>
             </nav>
         </aside>
@@ -277,7 +278,7 @@ require 'db/db.php';
                                             Edit
                                         </button>
 
-                                        <form action="delete.php" method="POST" style="display:inline;">
+                                        <form action="routes/delete.php" method="POST" style="display:inline;">
                                             <input type="submit" class="delete-btn" data-id="<?= $row['id'] ?>" value="Delete">
                                         </form>
                                     </td>
