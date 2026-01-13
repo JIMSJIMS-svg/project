@@ -1,0 +1,86 @@
+#editItemModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#editItemModal .modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: calc(var(--spacing-unit) * 4);
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 800px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+/* Two-column layout inside Edit modal */
+#editItemModal form {
+  width: 100%;
+}
+
+/* Flex wrapper for columns */
+#editItemModal form > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 49%;
+}
+
+/* Put the two divs side by side */
+#editItemModal form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--spacing-unit) * 2);
+}
+
+/* Labels */
+#editItemModal label {
+  margin-bottom: var(--spacing-unit);
+  font-weight: bold;
+}
+
+/* Inputs & textarea */
+#editItemModal input,
+#editItemModal textarea,
+#editItemModal select {
+  width: 100%;
+  padding: calc(var(--spacing-unit) * 1);
+  margin-bottom: calc(var(--spacing-unit) * 2);
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-base);
+  box-shadow: var(--box-shadow);
+  height: 45px;
+}
+
+/* Submit button spans full width */
+#editItemModal button {
+  width: 100%;
+  margin-top: calc(var(--spacing-unit) * 2);
+  background-color: var(--accent-color);
+  color: white;
+  padding: calc(var(--spacing-unit) * 1.5);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+}
+
+#editItemModal button:hover {
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  #editItemModal form > div {
+    width: 100%;
+  }
+}
